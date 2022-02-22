@@ -1,6 +1,7 @@
 body {
   display: grid;
   grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr;
 
   .sidebar {
     grid-row: span 2;
@@ -8,7 +9,7 @@ body {
 }
 
 .sidebar {
-  background-color: #80DBFF;
+  background-color: #80ffc4;
   display: grid;
   padding: 10px;
   gap: 10px;
@@ -21,9 +22,58 @@ body {
 }
 
 .header {
-  background-color: #144F66;
+  background-color: #88ddff;
+  padding: 0 10px 5px 10px;
+
+  .up {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+    > img {
+      margin: 0 10px;
+      width: 25px;
+      border-radius: 50%;
+    }
+
+    input {
+      flex: 1;
+      border-radius: 10px;
+      margin: 0 50px 0 10px;
+    }
+  }
+
+  .down {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+    > img {
+      width: 70px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    .welcome {
+      flex: 1;
+
+      h4, h1 {
+        margin: 0;
+      }
+    }
+
+    button {
+      background-color: rgb(0, 100, 139);
+      color: whitesmoke;
+      border-radius: 20px;
+      margin-left: 20px;
+      width: 120px;
+      padding: 10px;
+    }
+  }
 }
 
 .main {
-  background-color: #52A9CC;
+  background-color: #52a9cc;
 }
