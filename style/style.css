@@ -1,8 +1,8 @@
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 200px 1fr;
-      grid-template-columns: 200px 1fr;
+  -ms-grid-columns: 220px 1fr;
+      grid-template-columns: 220px 1fr;
 }
 
 body .sidebar {
@@ -10,14 +10,27 @@ body .sidebar {
 }
 
 .sidebar {
-  background-color: blue;
+  background-color: #80DBFF;
+  display: -ms-grid;
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  -ms-grid-columns: 25px 1fr;
+      grid-template-columns: 25px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .empty {
+  height: 20px;
 }
 
 .header {
-  background-color: #fff;
+  background-color: #144F66;
 }
 
 .main {
-  background-color: #a5a5a5;
+  background-color: #52A9CC;
 }
 /*# sourceMappingURL=style.css.map */
