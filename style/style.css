@@ -1,1 +1,23 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+}
+
+body .sidebar {
+  grid-row: span 2;
+}
+
+.sidebar {
+  background-color: blue;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.main {
+  background-color: #a5a5a5;
+}
+/*# sourceMappingURL=style.css.map */
